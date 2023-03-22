@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+.img-padding {
+			padding: 20px; /* add desired padding */
+		}
+
+    .icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-container img {
+  margin-right: 10px;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+iframe {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Rockwell";
+  font-weight: bolder;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+  font-family: "Rockwell";
+  font-size: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+outline-color: #115959;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button{
+font-family: "Rockwell";
+font-size: 28px;
+font-weight: bold;
+width: 100%;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #2EF2BB;
+color: #115959;
+align-items: center;
+}
+.button:hover {background-color: #30F2CF}
+
+.button:active {
+  background-color: #30F2CF;
+  box-shadow: 0 10px #666;
+  transform: translateY(4px);
+}
+
+.footer {
+  background: #115959;
+  color: #F2F2F2;
+  padding-top: 15px;
+  padding-right: 5px;
+  font-family: "Rockwell";
+  font-size: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+</style>
+<!--NAVBAR BOOTSTRAP AESTHETICS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body>
+
+<div class="header">
+<img src="Banner.svg" width=100% height="auto">
+
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #115959">
+        <a class="navbar-brand" href="index.html">
+            Home
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="soloadventures.html">Solo Adventures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="familyfun.html">Family Fun</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinations.html">Destinations</a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>  
+          </ul>
+        </div>  
+      </nav>
+</div>
+<div class="h2">
+<h2>DESTINATIONS</h2>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div>
+        <img src="snowboard.jpg" width="50%" class="img-padding" style="float: left; margin-right: 10px;">
+      <br>
+      <h2>Snowboarding in the Cairngorm Mountains</h2>
+  
+        <p>Introducing our Snowboarding Adventure Package in the Cairngorm Mountains, perfect for snowboarding enthusiasts looking for an exhilarating and unforgettable experience!
+   <p>Activity:</p>
+          <p>Get ready to hit the slopes and experience the thrill of snowboarding in one of Scotland's most breathtaking locations. Our expert guides will provide you with everything you need, from equipment to safety instructions, to make sure you have a safe and enjoyable experience. The Cairngorm Mountains offer a variety of slopes for different skill levels, so whether you're a beginner or an advanced snowboarder, there's something for everyone. </p>          
+   <p>Itinerary:</p>
+          <p>Day 1: Upon arrival, you will be welcomed by our team and transported to your accommodation. After settling in, you will have a snowboarding orientation session with one of our expert instructors. You'll also have time to explore the charming nearby village.
+          <br>
+          Day 2-4: Over the next three days, you'll hit the slopes of Cairngorm Mountain with your instructor, who will take you through various terrain and improve your snowboarding skills. You'll have plenty of time to practice on your own as well. In the evenings, you'll have the chance to relax and unwind at the lodge with meals provided.
+          <br>
+          Day 5: After breakfast, you'll have a free morning to pack and take in any last minute views. Before departing in the afternoon, you can choose to have one final ride or even book a different activity nearby.
+
+        </p>
+   <p>Price:</p>
+            <p>Our Snowboarding Adventure Package in the Cairngorm Mountains is available from December through March, with prices starting at £1,399 per person for five days, including accommodation, meals, transportation, and snowboarding lessons. Don't miss out on this unforgettable winter adventure!</p>
+            <BR>
+            <a href="contactus.html" button class="button">BOOK TODAY
+            </a>
+    </div>
+    </div>
+    <div class="card">
+      <div>
+        <img src="paraglider.jpg" class="img-padding" width="50%" style="float: left; margin-right: 10px;">
+      <br>
+      <h2>Paragliding over the Isle of Arran</h2>
+  
+        <p>Fly over the Isle of Arran in style with Adventure Holidays UK. 
+   <p>Activity:</p>
+          <p>The Isle of Arran Paragliding Adventure Package is an exhilarating experience that combines the thrill of paragliding with the stunning natural beauty of this Scottish island. Participants will soar through the skies and take in breathtaking views of the coastline, mountains, and surrounding landscapes.
+
+          </p>          
+   <p>Itinerary:</p>
+          <p>Day 1: Arrival on the Isle of Arran and check-in at a local hotel. Participants will have a brief orientation session with their instructor and get fitted with all necessary paragliding equipment.<br>
+            Day 2-4: Participants will engage in daily paragliding sessions under the guidance of a certified instructor. Each day, the group will explore different launch sites and flying routes, taking advantage of the best weather conditions and wind directions. Participants will also have time to explore the island's local culture, cuisine, and natural wonders during their downtime.
+          <br>
+          Day 5: Departure from the Isle of Arran.</p>
+   <p>Price:</p>
+            <p>The package costs £1,500 per person and includes accommodation, transportation, equipment rental, and instructor fees. Participants are responsible for their meals, travel insurance, and any personal expenses.</p>
+            <BR>
+            <a href="contactus.html" button class="button">BOOK TODAY
+            </a>
+    </div>
+    </div>
+    <div class="card">
+      <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1TJ08caetkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LLgbWMPI5l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="card">
+      <h3>We want your input!</h3>
+      <p>At Adventure Holidays, we believe that the best way to plan an unforgettable getaway is to involve our customers in the process. We understand that everyone has different preferences and ideas when it comes to adventure activities. That's why we encourage our customers to propose their own activity ideas for future getaways. Whether it's hiking, rafting, or bungee jumping, we want to hear from you. Your input will help us tailor our packages to your needs and preferences, ensuring that your holiday adventure is a truly unique and personalized experience. So, don't hesitate to share your ideas with us and let's create an adventure of a lifetime together!</p>
+
+    </div>
+  
+  </div>
+ 
+
+<footer class="footer">
+  || © Adventure Holidays 2022 ||
+  </footer> 
+
+</body>
+</html>
+

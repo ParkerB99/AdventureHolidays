@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+.img-padding {
+			padding: 20px; /* add desired padding */
+		}
+
+    .icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-container img {
+  margin-right: 10px;
+}
+.h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Rockwell";
+  font-weight: bolder;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  font-family: "Rockwell";
+  font-size: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: white;
+  padding-left: 5px;
+  font-family: "Rockwell";
+  font-size: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+outline-color: #115959;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button{
+font-family: "Rockwell";
+font-size: 28px;
+font-weight: bold;
+width: 100%;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #2EF2BB;
+color: #115959;
+align-items: center;
+}
+.button:hover {background-color: #30F2CF}
+
+.button:active {
+  background-color: #30F2CF;
+  box-shadow: 0 10px #666;
+  transform: translateY(4px);
+}
+
+.footer {
+  background: #115959;
+  color: #F2F2F2;
+  padding-top: 15px;
+  padding-right: 5px;
+  font-family: "Rockwell";
+  font-size: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+</style>
+<!--NAVBAR BOOTSTRAP AESTHETICS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body>
+
+<div class="header">
+<img src="Banner.svg" width=100% height="auto">
+
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #115959">
+        <a class="navbar-brand" href="index.html">
+            Home
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="soloadventures.html">Solo Adventures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="familyfun.html">Family Fun</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinations.html">Destinations</a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>  
+          </ul>
+        </div>  
+      </nav>
+</div>
+<div class="h2">
+<h2>FAMILY FUN</h2>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <img src="whiteriverrafting.jpg" class="img-padding">
+      <br>
+      <h2>River Rafting in North Wales</h2>
+  
+        <p>Introducing our Family Holiday Adventure Package for White River Rafting in Wales! This exciting adventure is perfect for families looking for an adrenaline-filled vacation experience.
+   <p>Activity:</p>
+          <p>White River Rafting is a thrilling water sport that involves navigating fast-flowing rapids in an inflatable raft. This activity is suitable for all ages and experience levels, and our expert guides will ensure that everyone has a safe and enjoyable time on the water.
+
+          </p>          
+   <p>Itinerary:</p>
+          <p>Day 1 - Arrival and Check-In: Arrive at our riverside campsite and check into your comfortable accommodations. Enjoy a delicious welcome dinner and get to know your fellow adventurers.<br>
+          Day 2 - White River Rafting: After breakfast, you will meet your experienced guides who will provide you with all the necessary safety equipment and instructions for the day. You will then embark on your white river rafting adventure, navigating exciting rapids and enjoying the stunning scenery along the way. After the activity, you will return to camp for a well-deserved dinner and restful night's sleep.
+          <br>
+          Day 3 - Departure: Enjoy a hearty breakfast before packing up and departing from the campsite.</p>
+   <p>Price:</p>
+            <p>Our Family Holiday Adventure Package for White River Rafting in England is priced at £350 per person. This price includes two nights' accommodation, all meals, white river rafting activity with equipment and experienced guides, and transportation to and from the river. Additional activities can be added for an extra fee.</p>
+            <BR>
+            <a href="contactus.html" button class="button">BOOK TODAY
+            </a>
+    </div>
+    <div class="card">
+      <h3>Watch the action</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/M50JegfbuNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+      <h3>We want your input!</h3>
+      <p>At Adventure Holidays, we believe that the best way to plan an unforgettable getaway is to involve our customers in the process. We understand that everyone has different preferences and ideas when it comes to adventure activities. That's why we encourage our customers to propose their own activity ideas for future getaways. Whether it's hiking, rafting, or bungee jumping, we want to hear from you. Your input will help us tailor our packages to your needs and preferences, ensuring that your holiday adventure is a truly unique and personalized experience. So, don't hesitate to share your ideas with us and let's create an adventure of a lifetime together!</p>
+
+    </div>
+  
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="mountainbiking.jpg" class="img-padding" class="img-border">
+      <br>
+      <h2>Biking through England</h2>
+  
+        <p>Ever wanted to see the beautiful greenscapes of England? Now is your chance! The whole family can experience the countryside on wheels thanks to our latest biking package.</p>
+   <p>Activity:</p>
+          <p>Enjoy a family-friendly biking adventure through the scenic countryside of England. This package offers a chance to explore the beauty of rural England while enjoying a peaceful, eco-friendly mode of transportation.</p>          
+   <p>Itinerary:</p>
+          <p> Day 1: Arrival in London
+            Arrive in London and check-in to your hotel. Spend the rest of the day at leisure, exploring the city or resting up for the biking adventure ahead.<br>
+            Day 2: London to Oxford
+            After breakfast, you'll meet your guide and travel to Oxford, where you'll begin your biking adventure. You'll start with a leisurely ride through the historic university town of Oxford, stopping to take in the sights and learn about the city's rich history.
+            <br>
+            Day 3: Oxford to Stratford-upon-Avon
+Today, you'll continue your biking adventure, cycling through the stunning Cotswolds countryside before arriving in the picturesque town of Stratford-upon-Avon. Along the way, you'll pass through charming villages and enjoy breathtaking views of the rolling hills.
+<br>
+Day 4: Stratford-upon-Avon to Bath
+On day four, you'll cycle through the stunning scenery of the Cotswolds before arriving in the beautiful city of Bath. Take some time to explore this historic city, known for its Roman Baths, Georgian architecture, and vibrant culture.
+<br>
+Day 5: Bath to Bristol
+On your final day, you'll cycle from Bath to Bristol, passing through charming villages and idyllic countryside along the way. You'll have the chance to explore the vibrant city of Bristol, known for its street art, music scene, and historic harbor..</p>
+   <p>Price:</p>
+            <p>The cost of this family holiday adventure package for peaceful biking in England is £2,500 per person, based on a family of four traveling together. This includes all accommodation, transportation, bike rental, a professional guide, and some meals.</p>
+            <br>
+            <a href="contactus.html" button class="button">BOOK TODAY
+            </a>
+
+    </div>
+    <div class="card">
+      <h3>Watch the action</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YKt5hBZysDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p>To stay up to date on all of our latest adventures and exciting news, we invite you to follow us on social media. We're active on most major platforms, including, Instagram, Twitter, and YouTube. By following us, you'll be the first to know about our newest trips, special offers, and insider tips for making the most of your adventure.</p>
+      <div class="icon-container">
+        <a href="https://twitter.com/TeamWilderness" target="_blank">
+        <img src="twt icon.svg" alt="Twitter icon" width="50%" height="auto%"></a>
+        <a href="https://www.instagram.com/adventure/?hl=en" target="_blank">
+        <img src="ig icon.svg" width="50%" height="auto%"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <img src="yt icon.svg" width="50%" height="auto%"></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+  || © Adventure Holidays 2022 ||
+  </footer> 
+
+</body>
+</html>
+

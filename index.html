@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+.img-padding {
+			padding: 20px; /* add desired padding */
+		}
+
+    .icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-container img {
+  margin-right: 10px;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  font-family: "Rockwell";
+  font-size: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: white;
+  padding-left: 5px;
+  font-family: "Rockwell";
+  font-size: 16px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+outline-color: #115959;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button{
+font-family: "Rockwell";
+font-size: 28px;
+font-weight: bold;
+width: 100%;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #2EF2BB;
+color: #115959;
+align-items: center;
+}
+.button:hover {background-color: #30F2CF}
+
+.button:active {
+  background-color: #30F2CF;
+  box-shadow: 0 10px #666;
+  transform: translateY(4px);
+}
+
+.footer {
+  background: #115959;
+  color: #F2F2F2;
+  padding-top: 15px;
+  padding-right: 5px;
+  font-family: "Rockwell";
+  font-size: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+</style>
+<!--NAVBAR BOOTSTRAP AESTHETICS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body>
+
+<div class="header">
+<img src="Banner.svg" width=100% height="auto">
+
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #115959">
+        <a class="navbar-brand" href="index.html">
+            Home
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="soloadventures.html">Solo Adventures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="familyfun.html">Family Fun</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinations.html">Destinations</a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>  
+          </ul>
+        </div>  
+      </nav>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Who are we</h2>
+     
+        <p>Here at Adventure Holidays, were proud to do things a little differently to other tour operators. As part of the Altai Travel family, we operate all of our trips personally and take complete ownership of your adventure from beginning to end.</p>
+
+    <p> We're passionate about adventure travel and committed to providing the best possible experiences in the world's most outstanding locations. We realised that the key to this is setting up and running our adventure operations directly in more than 30 countries in every corner of the world. This approach allows us to ensure the highest levels of safety and quality in everything we do. Our meticulous teams in the UK and across our destinations worldwide can focus on perfecting their knowledge of the beautiful locations we sell and creating authentic experiences for you to enjoy. </p>
+    <img src="rockclimbing.jpg" class="img-padding">
+    </div>
+    <div class="card">
+
+      <h2>Safety</h2>
+        <p>Of course, taking on a challenging adventure should not mean compromising your safety. You can be confident you are always in safe hands with Adventure Holidays. We are experts in all our activities, know all the areas in which we operate intimately and know how to ensure you enjoy your adventure safely using the best guides and the best operating procedures.
+        Our team are trained, certificated and specialise in outdoor pursuits such as mountain biking, kayaking, rock climbing, paragliding, fishing, walking tours.</p>
+      
+      <img src="bmx.jpg" class="img-padding" class="img-border">
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <a href="contactus.html" button class="button">BOOK TODAY
+      </a>
+    </div>
+    <div class="card">
+      <h3>Watch Trailer</h3>
+      <iframe width="240" height="150" src="https://www.youtube.com/embed/9txxodYuZGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+      <h3>Quality</h3>
+      <p>We use our own equipment, transport and sometimes even our own accommodation, to ensure the best possible quality is maintained throughout your trip. All the elements of your adventure are carefully put together by our Altai team members on the ground and we're always on hand to look after you, ensuring you get the most out of your experience every step of the way. </p>
+ 
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p>To stay up to date on all of our latest adventures and exciting news, we invite you to follow us on social media. We're active on most major platforms, including, Instagram, Twitter, and YouTube. By following us, you'll be the first to know about our newest trips, special offers, and insider tips for making the most of your adventure.</p>
+      <div class="icon-container">
+        <a href="https://twitter.com/TeamWilderness" target="_blank">
+        <img src="twt icon.svg" alt="Twitter icon" width="50%" height="auto%"></a>
+        <a href="https://www.instagram.com/adventure/?hl=en" target="_blank">
+        <img src="ig icon.svg" width="50%" height="auto%"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <img src="yt icon.svg" width="50%" height="auto%"></a>
+        </div>
+    </div>
+    <div class="card">
+      <h3>Experienced Guides</h3>
+      <p>Our guides are passionate about what they do and strive to create memorable experiences for our customers. They are skilled at communicating with customers, providing guidance and support, and adapting to changing conditions to ensure that everyone stays safe and comfortable throughout the adventure. </p>
+ 
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  || © Adventure Holidays 2022 ||
+  </footer> 
+
+</body>
+</html>
+

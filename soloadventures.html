@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+.img-padding {
+			padding: 20px; /* add desired padding */
+		}
+
+    .icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-container img {
+  margin-right: 10px;
+}
+.h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Rockwell";
+  font-weight: bolder;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  font-family: "Rockwell";
+  font-size: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: white;
+  padding-left: 5px;
+  font-family: "Rockwell";
+  font-size: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+outline-color: #115959;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button{
+font-family: "Rockwell";
+font-size: 28px;
+font-weight: bold;
+width: 100%;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #2EF2BB;
+color: #115959;
+align-items: center;
+}
+.button:hover {background-color: #30F2CF}
+
+.button:active {
+  background-color: #30F2CF;
+  box-shadow: 0 10px #666;
+  transform: translateY(4px);
+}
+
+.footer {
+  background: #115959;
+  color: #F2F2F2;
+  padding-top: 15px;
+  padding-right: 5px;
+  font-family: "Rockwell";
+  font-size: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+</style>
+<!--NAVBAR BOOTSTRAP AESTHETICS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body>
+
+<div class="header">
+<img src="Banner.svg" width=100% height="auto">
+
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #115959">
+        <a class="navbar-brand" href="index.html">
+            Home
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="soloadventures.html">Solo Adventures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="familyfun.html">Family Fun</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinations.html">Destinations</a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>  
+          </ul>
+        </div>  
+      </nav>
+</div>
+<div class="h2">
+<h2>SOLO ADVENTURES</h2>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <img src="solomancliff.jpg" class="img-padding">
+      <br>
+      <h2>Hiking in the Highlands</h2>
+  
+        <p>Looking for a thrilling hiking adventure in Scotland? Look no further than our solo traveller holiday adventure package! This package is designed for the adventurous solo traveller who wants to explore Scotland's breathtaking landscapes and challenge themselves with exhilarating hikes.
+   <p>Activity:</p>
+          <p>The package includes multiple day hikes through some of Scotland's most stunning natural scenery. You'll experience the rugged terrain of the Scottish Highlands and the majestic beauty of the Isle of Skye. You'll hike through glens, over hills and mountains, and along stunning coastal paths.</p>          
+   <p>Itinerary:</p>
+          <p> Day 1: Arrive in Edinburgh and travel to your accommodation in the Scottish Highlands.<br>
+            Day 2: Hike through Glen Coe, one of Scotland's most famous and scenic glens.<br>
+            Day 3: Explore the Isle of Skye and hike through the Quiraing, a geological wonder of dramatic cliffs and pinnacles.<br>
+            Day 4: Hike to the summit of Ben Nevis, the highest peak in the UK.<br>
+            Day 5: Hike along the West Highland Way, taking in stunning views of Loch Lomond and the Trossachs National Park.<br>
+            Day 6: Return to Edinburgh for a final night in the city.</p>
+   <p>Price:</p>
+            <p>The package includes accommodation, transportation, and guided hikes. The price for this adventure package starts at £1500 per person. This price may vary depending on the season and availability of accommodations.</p>
+            <BR>
+            <a href="contactus.html" button class="button">BOOK TODAY
+            </a>
+    </div>
+    <div class="card">
+      <h3>Watch Trailer</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/T7DdvpXXoGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+      <h3>We want your input!</h3>
+      <p>At Adventure Holidays, we believe that the best way to plan an unforgettable getaway is to involve our customers in the process. We understand that everyone has different preferences and ideas when it comes to adventure activities. That's why we encourage our customers to propose their own activity ideas for future getaways. Whether it's hiking, rafting, or bungee jumping, we want to hear from you. Your input will help us tailor our packages to your needs and preferences, ensuring that your holiday adventure is a truly unique and personalized experience. So, don't hesitate to share your ideas with us and let's create an adventure of a lifetime together!</p>
+
+    </div>
+  
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="kayak.jpg" class="img-padding" class="img-border">
+      <br>
+      <h2>Kayaking in the Lake District</h2>
+  
+        <p>Welcome to our solo traveller kayaking adventure package in England! This package is perfect for those who love the outdoors and want to explore the beauty of England's waterways.</p>
+   <p>Activity:</p>
+          <p>The main activity of this package is kayaking. You will spend your days paddling along some of England's most picturesque rivers, lakes and canals. This is an excellent opportunity to get up close with nature and enjoy some peaceful time on the water.</p>          
+   <p>Itinerary:</p>
+          <p> Day 1: Arrival in the city of Bath, where you will be    staying in a comfortable hotel. After checking in, you will be given a briefing on kayaking and safety procedures by our experienced guides.<br>
+            Day 2: Your first kayaking adventure will take you along the Kennet and Avon Canal, passing through picturesque countryside and historic villages. You will stop for lunch in a charming pub before continuing your journey to Bradford on Avon.<br>
+            Day 3: Today's kayaking adventure will take you along the River Wye, which is famous for its stunning scenery and wildlife. You will paddle through the beautiful Symonds Yat gorge and stop for lunch in a riverside cafe.<br>
+            Day 4: On the final day of your kayaking adventure, you will explore the tranquil waters of the River Thames. You will paddle past famous landmarks such as Windsor Castle and Eton College before finishing your journey in the historic town of Marlow.</p>
+   <p>Price:</p>
+            <p>The price for this solo traveller kayaking adventure package in England starts at £950 per person. This includes 3 nights' accommodation in a comfortable hotel, all kayaking equipment and safety gear, and the services of an experienced guide. Meals and transport to and from the starting and finishing points are not included.</p>
+            <br>
+            <a href="contactus.html" button class="button">BOOK TODAY
+            </a>
+
+    </div>
+    <div class="card">
+      <h3>Watch Trailer</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gh051HppxSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p>To stay up to date on all of our latest adventures and exciting news, we invite you to follow us on social media. We're active on most major platforms, including, Instagram, Twitter, and YouTube. By following us, you'll be the first to know about our newest trips, special offers, and insider tips for making the most of your adventure.</p>
+      <div class="icon-container">
+        <a href="https://twitter.com/TeamWilderness" target="_blank">
+        <img src="twt icon.svg" alt="Twitter icon" width="50%" height="auto%"></a>
+        <a href="https://www.instagram.com/adventure/?hl=en" target="_blank">
+        <img src="ig icon.svg" width="50%" height="auto%"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <img src="yt icon.svg" width="50%" height="auto%"></a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+  || © Adventure Holidays 2022 ||
+  </footer> 
+
+</body>
+</html>
+
